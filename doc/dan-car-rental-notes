@@ -1,0 +1,55 @@
+Models -
+
+  Reservation
+    - start date
+    - startLocation
+    - end date
+    - endLocation
+    - hasMany Client
+    - hasOne Car
+    - haveMany Payment
+    - returned:Boolean
+    - paidInFull:Boolean
+    - hasOne InsuranceCoverage
+
+  Car
+    - CarType ( id:Long )
+    - vin
+    - availableRightNow:Boolean
+    - color
+    - plate number
+    - number of Passengers
+    - hasMany Reservations
+    - imageURL
+    - hasOne Location
+    - homeLocation
+
+  Client
+    - name
+    - email
+    - phone
+    - driver license #
+    - address
+    - hasMany creditCards
+
+  CreditCard
+    - cc number
+    - name on card
+    - hasOne Client
+
+  Location
+    - name
+    - address
+
+  Payment
+    - cleared
+    - processedDate
+    - amount
+    - belongsTo Reservation
+    - hasOne Client
+    - hasOne Location
+
+  InsuraceCoverage
+    - value
+    - terms
+    - hasOne Location

@@ -1,1 +1,3 @@
 // SillyReverser
+function SillyReverser() {
+}

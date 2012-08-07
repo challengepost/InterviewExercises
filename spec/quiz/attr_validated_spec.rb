@@ -1,11 +1,9 @@
 require 'spec_helper.rb'
 
 describe Quiz::AttrValidated do
-  
-  class Dog
 
-    def self.attr_validated(method_name, &validation)
-    end
+  class Dog
+    include Quiz::AttrValidated
 
     attr_validated :num_legs do |v|
       v <= 4

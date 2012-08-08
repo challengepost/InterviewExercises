@@ -20,6 +20,25 @@ Carefully consider both the data structure and the algorithm for your answer. (R
 4. Pascal's Triangle (pascal.js)
 Write a function 'triangle' for Pascal such that new Pascal().triangle(row, col) returns n, where n  is the value of Pascal's Triangle for the given row and column (zero-indexed).
 
+5. Validation Module (attr_validated.rb)
+Write a ruby module that when included in a class, provides a class method `attr_validated` which will raise an argument error on given setter methods when the specified conditions are not met.
+
+Example:
+```ruby
+  class Dog
+    include Quiz::AttrValidated
+
+    attr_validated :num_legs do |v|
+      v <= 4
+    end
+  end
+
+  dog = Dog.new
+  dog.num_legs = 4  # ok
+  dog.num_legs = 5  # raises an argument error
+  dog.num_legs = nil  # raises an argument error
+```
+
 ###Web###
 
 1. Given that browsers restrict passing cookies/sessions across domains, how would you approach the problem of keeping users logged in to the same account across all domains on our platform?  (Touches on knowledge of how the web works, http, cookies, etc.)

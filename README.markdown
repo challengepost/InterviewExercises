@@ -1,4 +1,9 @@
-##Interview Exercises##
+#Interview Exercises#
+
+This project contains sample questions and exercises for ChallengePost tech interviews. Please feel free to add questions
+and code skeletons to the master branch. For interviews, commit responses to a branch with the subject's name if desired.
+
+## Examples ##
 
 All of these should allow for follow up questions which can revolve around refactoring, testing, performance, coding style, etc, etc.
 

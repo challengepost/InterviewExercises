@@ -1,7 +1,7 @@
 #Interview Exercises#
 
 This project contains sample questions and exercises for ChallengePost tech interviews. Please feel free to add questions
-and code skeletons to the master branch. Interview responses can be committeds to a branch with the subject's name if desired.
+and code skeletons to the master branch. Interview responses can be committed to a branch with the subject's name if desired.
 
 ## Examples ##
 

@@ -17,4 +17,23 @@
 
 function Pascal() {
 
+  this.triangle =  function(column, row){
+    self = this;
+    if (column < 0 || row < 0) {
+      return "undefined"
+    }
+    else if(row == 0) {
+      return 1;
+    }
+    else if (column == 0) {
+      return 1;
+    }
+    else if (column == row) {
+      return 1;
+    }
+    else {
+      return self.triangle(column-1, row-1) + self.triangle(column-1, row);
+    }
+  };
+
 }

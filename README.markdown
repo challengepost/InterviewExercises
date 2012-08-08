@@ -1,4 +1,4 @@
-##Problems##
+##Interview Exercises##
 
 All of these should allow for follow up questions which can revolve around refactoring, testing, performance, coding style, etc, etc.
 

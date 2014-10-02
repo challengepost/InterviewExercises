@@ -8,3 +8,5 @@ rescue LoadError
     abort "Jasmine is not available. In order to run jasmine, you must: (sudo) gem install jasmine"
   end
 end
+
+Dir["lib/tasks/*.rake"].each { |f| load f }

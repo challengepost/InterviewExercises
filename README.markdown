@@ -39,6 +39,10 @@ Example:
   dog.num_legs = nil  # raises an argument error
 ```
 
+6. Normalize tag names
+
+Given our export of "tags" for software project, output a new csv containing normalized tag names.
+
 ###Web###
 
 1. Given that browsers restrict passing cookies/sessions across domains, how would you approach the problem of keeping users logged in to the same account across all domains on our platform?  (Touches on knowledge of how the web works, http, cookies, etc.)
